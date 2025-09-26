@@ -1,0 +1,5 @@
+mkdir infrastructure
+echo "FROM python:3.9-slim" > infrastructure/Dockerfile
+echo "WORKDIR /app" >> infrastructure/Dockerfile
+echo "COPY app/main.py ." >> infrastructure/Dockerfile
+echo "CMD [\"python\", \"main.py\"]" >> infrastructure/Dockerfile
